@@ -76,10 +76,12 @@ const AnswerButton: React.FC<AnswerButtonProps> = ({
       onClick={onClick}
     >
       <div className="flex flex-col items-center">
-        <span className="text-3xl mb-1">{choice}</span>
-        <span className="text-xs font-normal">
-          {showAnswer && choice === isCorrect && "正确"}
-        </span>
+     <span className="text-xs font-normal">
+        {showAnswer && (
+        (choice === "〇" && isCorrect) || 
+        (choice === "×" && isCorrect)
+       ) && "正确"}
+    </span>
       </div>
     </motion.div>
   );
