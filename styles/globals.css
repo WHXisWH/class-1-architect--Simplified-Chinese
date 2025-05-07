@@ -1,0 +1,6 @@
+mkdir -p styles
+cat > styles/globals.css << 'EOL'
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+EOL
