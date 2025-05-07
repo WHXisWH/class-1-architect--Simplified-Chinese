@@ -56,7 +56,7 @@ const AnswerButton: React.FC<AnswerButtonProps> = ({
   const getButtonColorClass = () => {
     if (showAnswer) {
       if (isSelected) {
-        return isSelected === question.answer 
+        return isSelected === isCorrect 
           ? "bg-green-500 text-white" 
           : "bg-red-500 text-white";
       }
