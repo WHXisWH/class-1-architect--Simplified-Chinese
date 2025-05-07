@@ -70,19 +70,17 @@ const AnswerButton: React.FC<AnswerButtonProps> = ({
   
   return (
     <motion.div
-      whileHover={!disabled ? { scale: 1.05 } : {}}
-      whileTap={!disabled ? { scale: 0.95 } : {}}
-      className={`flex-1 max-w-[130px] py-4 rounded-xl text-center font-bold text-2xl shadow-md ${getButtonColorClass()} transition-colors`}
-      onClick={onClick}
-    >
-      <div className="flex flex-col items-center">
-     <span className="text-xs font-normal">
-        {showAnswer && (
-        (choice === "〇" && isCorrect) || 
-        (choice === "×" && isCorrect)
-       ) && "正确"}
+  whileHover={!disabled ? { scale: 1.05 } : {}}
+  whileTap={!disabled ? { scale: 0.95 } : {}}
+  className={`flex-1 max-w-[130px] py-4 rounded-xl text-center font-bold text-2xl shadow-md ${getButtonColorClass()} transition-colors`}
+  onClick={onClick}
+>
+  <div className="flex flex-col items-center">
+    <span className="text-3xl mb-1">{choice}</span>
+    <span className="text-xs font-normal">
+      {showAnswer && isCorrect && "正确"}
     </span>
-      </div>
-    </motion.div>
+  </div>
+</motion.div>
   );
 };
