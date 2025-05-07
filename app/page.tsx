@@ -30,6 +30,8 @@ const QuizContent = () => {
     questions,
     current 
   } = useQuiz();
+
+  const { darkMode } = useTheme(); 
   
   if (showResults) {
     return <ResultsScreen />;
