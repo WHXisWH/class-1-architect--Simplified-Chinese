@@ -1,3 +1,4 @@
+import '../styles/globals.css';
 import { ClientThemeProvider } from './theme/ClientThemeProvider';
 
 export default function RootLayout({
