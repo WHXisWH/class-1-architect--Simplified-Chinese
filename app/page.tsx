@@ -11,6 +11,7 @@ import { CategorySelector } from './components/ui/CategorySelector';
 import { ProgressBar } from './components/ui/ProgressBar';
 import { useQuiz } from './hooks/useQuiz';
 import { ThemeToggle } from './theme/ThemeToggle';
+import { useTheme } from './theme/ThemeProvider';
 
 const QuizApp = () => {
   return (
