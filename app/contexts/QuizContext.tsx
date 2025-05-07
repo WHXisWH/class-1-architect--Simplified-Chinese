@@ -1,5 +1,7 @@
+'use client';
+
 import React, { createContext, useState, useEffect } from 'react';
-import questions from '@/data/environment.json';
+import questions from '../../data/environment.json';
 
 // 問題のカテゴリー分類
 const categories = {

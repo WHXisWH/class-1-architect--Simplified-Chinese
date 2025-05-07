@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { useQuiz } from '../hooks/useQuiz';
 import { useTheme } from '../theme/ThemeProvider';
